@@ -1,0 +1,49 @@
+body{
+        padding: 0;
+        margin: 0;
+		background: url(images/sky.jpg) center top;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;	
+		font: normal 100% Helvetica,Arial,sans-serif; 
+		line-height: 1.5em;
+        font-family:"Microsoft YaHei";
+        font-size: 1.3em;
+        color: #666666;
+	}
+
+		h1{
+			text-align:center;
+			color: white;
+			font-size:1.5em;
+		}
+		.reason{
+			width: 45%;
+		    float: left;
+		    margin-left:5%;
+			text-indent:2em;
+		}
+		img{
+			display: block; 
+			margin:auto;
+			max-width: 100%;
+		}
+		.result{
+			width: 40%;
+			float: left;
+			margin-top: 5%;
+			margin-left:5%;
+		}
+		.result #so{
+			 font-size:2.5em;
+			 color:#555; 
+			 float:left;
+			 margin-top:50px; 
+			 margin-right:5%;
+			 font-weight:bold;
+			 font-style:italic;
+		}
+		a{
+			text-decoration:none;
+			font-weight:bold;
+		}
+		a:hover{color:silver;}
