@@ -1,77 +1,119 @@
-body{
-        padding: 0;
-        margin: 0;
-		background: url(images/sky.jpg) center top;
-		background-repeat: no-repeat;
-		background-size: 100% 100%;	
-		font: normal 100% Helvetica,Arial,sans-serif; 
-		line-height: 1.5em;
-        font-family:"Microsoft YaHei";
-        font-size: 1.3em;
-        color: #666666;
-	}
-
-		h1{
-			text-align:center;
-			color: white;
-			font-size:1.5em;
-		}
-		.reason{
-			width: 45%;
-		    float: left;
-		    margin-left:5%;
-			text-indent:2em;
-		}
-		img{
-			display: block; 
-			margin:auto;
-			max-width: 100%;
-		}
-		.result{
-			width: 40%;
-			float: left;
-			margin-top: 5%;
-			margin-left:5%;
-		}
-		.result #so{
-			 font-size:2.5em;
-			 color:#555; 
-			 float:left;
-			 margin-top:50px; 
-			 margin-right:5%;
-			 font-weight:bold;
-			 font-style:italic;
-		}
-		a{
-			text-decoration:none;
-			font-weight:bold;
-		}
-		a:hover{color:silver;}
-
-		@media only screen and (min-width: 400px) and (max-width: 600px) {
-         		body{
-         			margin:0;
-         			background-color: #eaeaea;
-                    background: none;
-         		}
-         		body,h1,.result #so{color:#000;}
-         		h1{width:100%;margin-left: 10px; margin-top: 20px; font-size: 1em;}
-		        .reason,.result{width:90%;}
-		        .result #so{margin-right: 8px;}
-		        a,strong{color:blue;}
-		        a:hover{color: #000;}
+body {
+    padding: 0;
+    margin: 0;
+	background: url(images/sky.jpg) center top;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;	
+	font: normal 100% Helvetica,Arial,sans-serif; 
+	line-height: 1.5;
+    font-family: "Microsoft YaHei";
+    font-size: 1.3em;
+    color: #666666;
 }
-        @media only screen and (max-width: 400px) {
-        	body{background-color: #eaeaea;
-        		background: none;
+
+.title {
+	text-align: center;
+	color: white;
+	font-size: 1.5em;
+}
+.reason {
+	float: left;
+	width: 45%;
+	margin-left: 5%;
+	text-indent: 1.5em;
+}
+.img-wall,
+.img-traffic,
+.img-test {
+	display: block; 
+	margin: auto;
+	max-width: 100%;
+}
+.result {
+	float: left;
+	margin-top: 5%;
+	margin-left: 5%;
+	width: 40%;
+}
+.result #so {
+	float: left;
+	margin-right: 5%;
+	font-size: 2.5em;
+	color: #555; 
+	font-weight: 700;
+	font-style: italic;
+}
+.tutorial-link {
+	text-decoration: none;
+	font-weight: 700;
+}
+.tutorial-link:hover {
+	color: silver;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    body {
+        margin: 0;
+        background-color: #eaeaea;
+        background: none;
+    }
+    .title,
+    .result #so {
+	    color: #000;
+    }
+    .title {
+	    width: 100%;
+	    margin-top: 20px; 
+	    margin-left: 10px; 
+	    font-size: 20px;
+    }
+    .reason,
+    .result {
+	    width: 90%;
+    }
+    .result #so {
+    	margin-top: 50px;
+	    margin-right: 8px;
+    }
+    .result p{
+    	line-height: 25px;
+    }
+    .tutorial,
+    .at-mail {
+	    color: blue;
+    }
+    .tutorial:hover {
+	    color: #000;
+    }
+}
+@media only screen and (max-width: 400px) {
+    body {
+    	background-color: #eaeaea;
+        background: none;
 	}
-         	body,h1,.result #so{color:#000;}
-        	h1{width:100%;font-size:1em;margin-left: 10px;margin-top: 20px;}
-        	.reason,.result{width:90%;}
-           	.result #so{margin-top: 70px;}
-           	.result p{
-           		margin:0.5em 0;
-           	}
-           	a,strong{color:blue;}
-		a:hover{color: #000;}
-           }
+    .title,
+    .result #so {
+    	color: #000;
+    }
+    .title {
+    	width: 100%;
+    	margin-top: 20px;
+        margin-left: 10px;
+    	font-size: 20px;
+
+    }
+    .reason,
+    .result {
+    	width: 90%;
+    }
+    .result #so {
+    	margin-top: 50px;
+    }
+    .tutorial,
+    .at-mail {
+    	color: blue;
+    }
+	.tutorial:hover {
+		color: #000;
+	}
+}
